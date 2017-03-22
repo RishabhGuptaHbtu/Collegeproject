@@ -1,0 +1,159 @@
+<html>
+<head>
+    
+	 <img src="Untitled1.png" alt="some_text" height="15%" width="100%">
+ 
+
+<style>
+     div{width=70%;
+            background-color: oldlace;
+         height: auto;
+        }
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    height:10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    a.cd:hover {background-color: chocolate;}
+
+li {display: inline;}
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a.cd {
+    float: left;
+    width: 19.55em;
+    height: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: cadetblue;
+    padding: 0.2em 0.6em;
+    border-right: 1px solid white;
+}
+    
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+    width=25%;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 22%;
+}
+
+/* Add padding to container elements */
+.container {width:100%;
+    
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    height:30px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}
+    </style>
+
+   <style>h1
+    {
+    color : blue;
+    }
+       form
+       {
+           width:70%;
+       }
+       label{
+min-width:180px;
+display: inline-block;
+}
+       body{
+           background-color: aquamarine;
+       }
+    </style> 
+    <title>
+    Register</title>
+    </head>
+<body><ul>
+     <li><a class="cd" href="First.html">Home</a></li>
+     <li><a class="cd" href="index6.html">Passenger Register</a></li>
+  <li><a class="cd" href="passlogin.html">Passenger Login</a></li>
+  <li><a class="cd" href="adminlogin.html">Admin Login</a></li>
+ 
+ 
+</ul>
+    <h2>PASSENGER REGISTRATION</h2>
+
+<form action="php1.php" method="POST" style="border:1px solid #ccc">
+  <div class="container">
+      <fieldset>
+      <legend>Personal details</legend>
+    <label><b>Name  </b> </label>
+    <input type="text" placeholder="Enter name" name="uname" required ><br>
+     <label><b>Father's Name</b></label>
+    <input type="text" placeholder="Enter Name" name="fname" required><br>
+      <label><b>Date of Birth</b></label>
+    <input type="date" placeholder="Enter DOB in YYYY/MM/DD" name="DOB" required><br>
+        <label><b>Select Gender</b></label>
+          <select name="gender">
+        <option default>Select Gender</option>
+    <option value="M">Male</option>
+    <option value="F">Female</option>
+  </select><br>
+      <label><b>Address</b></label>
+    <input type="text" placeholder="Enter Gaurdian Address" name="address" required><br>
+          </fieldset>
+      <fieldset>
+          <legend>
+          Account Details</legend>
+          <label><b>User id</b> </label>
+    <input type="text" placeholder="Enter id" name="uid" required ><br>
+     <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+      <label><b>Re-password</b></label>
+    <input type="password" placeholder="Confirm Password" name="rpsw" required><br>
+      </fieldset>
+      <br>
+<div class="clearfix">
+      <button type="button" class="cancelbtn" >Cancel</button>
+      <button type="submit" class="signupbtn" value="Submit">Register</button>
+       
+    </div>
+      
+  </div>
+</form>
+    <br>
+    </body>
+</html>
